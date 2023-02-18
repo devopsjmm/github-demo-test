@@ -3110,10 +3110,39 @@ dab4b91d98fe3818ef9b01e7472e5e9a74f7e09e                branch 'main' of https:/
  3372  git config user.email
  3373  git log
  3374  pwd
+
+
+
+
+
+
+
+
+
  3375  ll
  3376  ls -al
+
+
+
  3377  git config --global init.defaultBranch test-01
- 3378  rm -rf .git
  3379  git init
+➜  test git:(test-01) ✗ !vi
 
 
+➜  test git:(test-01) ✗ git add .
+➜  test git:(test-01) ✗ git commit -m "test_test-01_branch-01"
+	[test-01 (root-commit) de5fbfe] test_test-01_branch-01
+ 	5 files changed, 3173 insertions(+)
+ 	create mode 100644 Git_commands
+ 	create mode 100644 README.md
+ 	create mode 100644 index.html
+ 	create mode 100644 logo.png
+ 	create mode 100644 styles.css
+➜  test git:(test-01) git log
+	commit de5fbfeed68129e23a0554a97f123718ea0b296f (HEAD -> test-01)
+	Author: Jose M Munoz <devopsjmm@gmail.com>
+	Date:   Sat Feb 18 15:02:16 2023 -0500
+	
+    	test_test-01_branch-01
+	(END)
+➜  test git:(test-01) 
