@@ -1,3 +1,4 @@
+   14  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    15  brew install --cask virtualbox
    16  echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/josemunoz/.zprofile
    17   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/josemunoz/.zprofile
@@ -3132,3 +3133,44 @@ dab4b91d98fe3818ef9b01e7472e5e9a74f7e09e                branch 'main' of https:/
     	test_test-01_branch-01
 	(END)
 ➜  test git:(test-01) 
+
+
+
+➜  test git:(test-01) cp gitNotes GitNotes.txt
+➜  test git:(test-01) ✗ git status
+On branch test-01
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GitNotes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  test git:(test-01) ✗ vi gitNotes
+➜  test git:(test-01) ✗ git status 
+On branch test-01
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gitNotes
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GitNotes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+
+
+➜  test git:(test-01) ✗ git add .
+➜  test git:(test-01) ✗ git status     
+On branch test-01
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   GitNotes.txt
+        modified:   gitNotes
+
+➜  test git:(test-01) ✗ 
+
+
+
+
